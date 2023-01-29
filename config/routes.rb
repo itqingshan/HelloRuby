@@ -3,4 +3,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+
+  resources :system_logs, only: [:index]
+  # resources :system_logs, only: [] do
+  #   collection do
+  #     get :test
+  #   end
+  # end
 end
